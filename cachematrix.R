@@ -33,7 +33,7 @@ cacheSolve <- function(x, ...) {
 
   
   data <- x$getData()
-  m <- mean(data)
+  m <- solve(data)
   
   x$setCache(m)
   m
