@@ -1,7 +1,9 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## Cachec calculated  Matrix inverse
+## return list for with setCache,getCache,getData,setData property
+## Need to setData
 
 makeCacheMatrix <- function(x = matrix()) {
   
@@ -21,8 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## Check if Matrix inverse is calculated and return from cachec if its there
+## Else setData along with content in Cache
 cacheSolve <- function(x, ...) {
   
   ## Return a matrix that is the inverse of 'x'
@@ -34,8 +36,8 @@ cacheSolve <- function(x, ...) {
   
   data <- x$getData()
   m <- solve(data)
-  
   x$setCache(m)
+  
   m
   
 }
